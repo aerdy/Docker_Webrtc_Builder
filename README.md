@@ -5,25 +5,25 @@
 
 # Run docker bash
 ```
--  docker exec -t -i name/container /bin/bash
+docker exec -t -i name/container /bin/bash
 ```
 
 # Gclient depotools sync and build
 ```
-- fetch —nohooks webrtc_android
+fetch —nohooks webrtc_android
 ```
 
 ```
-- gclient sync
+gclient sync --verbose
 ```
 
 # Compiling
 ```
-- cd src
+cd src
 ```
 
 ```
-- gn gen out/Debug --args='target_os="android" target_cpu="arm"'
+gn gen out/Debug --args='target_os="android" target_cpu="arm"'
 ```
 
 You can specify a directory of your own choice instead of out/Debug, to enable managing multiple configurations in parallel.
@@ -36,5 +36,5 @@ You can specify a directory of your own choice instead of out/Debug, to enable m
 
 # Compiling using ninja 
 ```
-- ninja -C out/Debug
+ninja -C out/Debug
 ```
