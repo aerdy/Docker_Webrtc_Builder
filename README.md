@@ -1,14 +1,16 @@
-# Docker run requirement
+# Docker Webrtc Builder
+
+## Docker run requirement
 ```
 docker build -t name/container .
 ```
 
-# Run docker bash
+## Run docker bash
 ```
 docker exec -t -i name/container /bin/bash
 ```
 
-# Gclient depotools sync and build
+## Gclient depotools sync and build
 ```
 fetch —nohooks webrtc_android
 ```
@@ -17,7 +19,7 @@ fetch —nohooks webrtc_android
 gclient sync --verbose
 ```
 
-# Compiling
+## Compiling
 ```
 cd src
 ```
@@ -34,7 +36,7 @@ You can specify a directory of your own choice instead of out/Debug, to enable m
 - To build for 64-bit x64: use target_cpu="x64"
 ```
 
-# Compiling using ninja 
+## Compiling using ninja 
 ```
 ninja -C out/Debug
 ```
