@@ -1,6 +1,6 @@
 # Docker run requirement
 ```
-- docker build -t name/container .
+docker build -t name/container .
 ```
 
 # Run docker bash
