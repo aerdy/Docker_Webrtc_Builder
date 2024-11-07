@@ -12,6 +12,8 @@ RUN \
     lsb-base \
     lsb-release \
     python3 \
+    pkg-config\
+    openjdk-8-jdk \
     sudo
 
 RUN \
